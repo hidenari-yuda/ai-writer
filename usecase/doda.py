@@ -1,6 +1,6 @@
 import time
-
 from usecase.csv import write_csv
+import config 
 from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.by import By
@@ -25,6 +25,21 @@ class Doda:
 
         # ヘッドレスモード
         options = Options()
+
+        # iPhoneXをエミュレートした画面で実行する
+        # mobile_emulation = {"deviceName": "iPhone X"}
+        # options.add_experimental_option("mobileEmulation", mobile_emulation)
+
+        # ポート9222でデバッグ通信を待ち受けているChromeを操作する
+        options.add_argument("--remote-debugging-port=9222")
+        options.add_argument("--remote-debugging-address=127.0.0.1")
+
+        # プロファイルの保存先を指定
+        options.add_argument(
+            "--user-data-dir=" + config.USER_DATA_DIR)
+        # 使用するプロファイルを指定
+        options.add_argument('--profile-directory=Default')
+
         options.add_argument('--headless')
         driver = webdriver.Chrome(
             '../../driver/chromedriver',
@@ -44,7 +59,8 @@ class Doda:
         job_list = job_list[:10]
         print("取得した求人リスト数：", len(job_list))
 
-        dataList = [['会社名', '求人タイトル', '仕事内容', '対象', '勤務地', '最寄り駅', '給与', '事業概要']]
+        dataList = [['会社名', '求人タイトル', '仕事内容',
+                     '対象', '勤務地', '最寄り駅', '給与', '事業概要']]
 
         for job in job_list:
 

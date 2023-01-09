@@ -1,3 +1,4 @@
+from config.config import get_env
 from usecase.workport import Workport
 from usecase.csv import write_csv
 from usecase.doda import Doda
@@ -6,6 +7,7 @@ from usecase.indeed import Indeed
 # doda = Doda()
 # doda.get_job_list()
 # print("end")
+get_env()
 
 workport = Workport()
 workport.get_job_list()
