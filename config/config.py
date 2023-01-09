@@ -1,6 +1,7 @@
 import os
 from dotenv import load_dotenv
 
+
 def get_env():
     # .env ファイルをロードして環境変数へ反映
     load_dotenv(override=True)

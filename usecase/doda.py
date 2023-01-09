@@ -1,6 +1,6 @@
 import time
 from usecase.csv import write_csv
-import config 
+from config.config import config 
 from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.by import By
