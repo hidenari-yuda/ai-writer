@@ -1,6 +1,6 @@
 import time
 from usecase.csv import write_csv
-from config.config import config 
+import config.config
 from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.by import By
@@ -36,7 +36,7 @@ class Doda:
 
         # プロファイルの保存先を指定
         options.add_argument(
-            "--user-data-dir=" + config.USER_DATA_DIR)
+            "--user-data-dir=" + config.config.USER_DATA_DIR)
         # 使用するプロファイルを指定
         options.add_argument('--profile-directory=Default')
 
