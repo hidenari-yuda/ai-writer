@@ -3,6 +3,22 @@
 # chrome driver
 driver
 
+# virtualenv
+venv/
+
+# virtualenv
+ENV/
+
+# pyenv
+.python-version
+
+github.com/
+
+# celery beat schedule file
+celerybeat-schedule
+
+# tmp
+tmp/
 
 Byte-compiled / optimized / DLL files
 __pycache__/
