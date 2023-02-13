@@ -3,29 +3,17 @@
 
 ## Install
 
-1. 以下のようにパーケージをインストールするか、もしくはroboterフォルダーを実行するディレクトリへ置いてください。
+1. install the package
 $ python setup.py develop
 
-or
-
-$ ls
-scraping-recruit-site
-
-
 ## Requirement
-pip install termcolor==1.1.0
 
 
 ## Usage
 
-1. 以下のようにtalk_about_restaurant関数を呼び出すと実行可能です。
 
-# vim main.py
-import roboter.controller.conversation
-roboter.controller.conversation.talk_about_restaurant()
-
-2. 実行して下さい。
-$ python main.py
+2. start
+$ python manage.py
 
 (オプション: 保存するCSVやテンプレート先を変更する場合は、settings.pyに以下の値を入れる。)
 # vim settings.py

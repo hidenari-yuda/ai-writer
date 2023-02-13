@@ -1,0 +1,6 @@
+Django==2.1.2
+django-crispy-forms==1.7.2
+django-filter==2.0.0
+pytz==2018.5
+openai==1.0.0
+dotenv==0.10.1

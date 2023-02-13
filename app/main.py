@@ -1,6 +1,6 @@
 from http.server import BaseHTTPRequestHandler, HTTPServer
-from config.config import load_env
-from usecase.trasnlate import Translate
+from app.config.config import load_env
+from app.usecase.trasnlate import Translate
 
 # load env variables
 load_env()

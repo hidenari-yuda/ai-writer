@@ -17,7 +17,6 @@ def load_env():
     # MYAPP_USER = os.getenv('APP_USER')
     # MYAPP_PASS = os.getenv('APP_PASS')
 
-
     USER_DATA_DIR = os.getenv('USER_DATA_DIR')
 
     CHAT_GPT_ORGANIZATION = os.getenv('CHAT_GPT_ORGANIZATION')
@@ -27,4 +26,3 @@ def load_env():
     UBER_SUGGEST_PASSWORD = os.getenv('UBER_SUGGEST_PASSWORD')
 
     DEEPL_API_KEY = os.getenv('DEEPL_API_KEY')
-
