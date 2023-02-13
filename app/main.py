@@ -1,13 +1,17 @@
+from domain.utils.trasnlate import Translate
+from config.config import load_env
 from http.server import BaseHTTPRequestHandler, HTTPServer
-from app.config.config import load_env
-from app.usecase.trasnlate import Translate
+import infra.web_driver.uber_suggest as infra
 
 # load env variables
 load_env()
 
-translate = Translate()
-str = translate.translate_to_japanese("this is a pen")
-print(str)
+webDriver = infra.UberSuggest()
+webDriver.new()
+
+print("driver is ", webDriver)
+# # sign in
+webDriver.sign_in()
 
 # class routers(BaseHTTPRequestHandler):
 #     def do_GET(self):

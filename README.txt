@@ -24,3 +24,20 @@ TEMPLATE_PATH = '/tmp/templates/'
 CSV_FILE_PATH = None
 TEMPLATE_PATH = None
 
+## venv
+sudo pip install virtualenv
+
+virtualenv -p python3 venv 
+
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+python manage.py migrate
+
+python manage.py runserver 8080
+
+pip freeze > requirements.txt
+
+deactivate
+
