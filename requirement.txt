@@ -4,3 +4,6 @@ django-filter==2.0.0
 pytz==2018.5
 openai==1.0.0
 dotenv==0.10.1
+csv==1.0
+numpy==1.16.2
+dotenv==0.10.1

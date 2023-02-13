@@ -14,6 +14,17 @@ ENV/
 
 github.com/
 
+# http
+*.http
+
+# log
+*.log
+
+# pycharm
+.idea/
+
+.config/
+
 # celery beat schedule file
 celerybeat-schedule
 

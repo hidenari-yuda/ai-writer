@@ -1,4 +1,4 @@
-﻿求人企業のスクレイピングを行うためのツールです。
+﻿support your owned media by writing blog and searching keywords with AI. 
 ====
 
 ## Install
